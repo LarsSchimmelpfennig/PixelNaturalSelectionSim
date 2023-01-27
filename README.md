@@ -14,6 +14,9 @@ For this simulation, mutations only occur when a pixel is born near two pixels w
 
 https://user-images.githubusercontent.com/91089724/214709548-ce292432-5bf2-46df-a312-4b0f3d37b047.mp4
 
+**Simulating The Growth of Bacteria Around an Antibiotic Region**
+
+https://user-images.githubusercontent.com/91089724/215218270-85fd7645-dbb4-467c-8938-21f41dc2bd75.mp4
 
 
 
