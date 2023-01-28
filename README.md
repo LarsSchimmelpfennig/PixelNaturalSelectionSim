@@ -8,15 +8,12 @@ https://user-images.githubusercontent.com/91089724/214709186-afd6bbc9-bd5c-4876-
 
 For the above simulation, each genetic sequence is assigned to a random color by a hash function. 
 
+**Simulating The Growth of Bacteria Around an Antibiotic Region**
+
+https://user-images.githubusercontent.com/91089724/215218270-85fd7645-dbb4-467c-8938-21f41dc2bd75.mp4
+
 **Adding Sexual Selection (Bacterial Conjugation)**
 
 For this simulation, mutations only occur when a pixel is born near two pixels with different genetic sequences. The two sequences are randomly spliced together as a result.
 
 https://user-images.githubusercontent.com/91089724/214709548-ce292432-5bf2-46df-a312-4b0f3d37b047.mp4
-
-**Simulating The Growth of Bacteria Around an Antibiotic Region**
-
-https://user-images.githubusercontent.com/91089724/215218270-85fd7645-dbb4-467c-8938-21f41dc2bd75.mp4
-
-
-
