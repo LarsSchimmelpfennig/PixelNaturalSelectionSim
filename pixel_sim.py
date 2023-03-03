@@ -11,40 +11,40 @@ def find_neighbor_pixels(h, w, d_pixels):
 	into two lists for empty and color pixels
 	"""
 	l_empty_pixels = []
-	l_color_pixles = []
+	l_color_pixels = []
 	if (h-1, w) in d_pixels:
-		l_color_pixles.append((h-1, w))
+		l_color_pixels.append((h-1, w))
 	else:
 		l_empty_pixels.append((h-1, w))
 	if (h-1, w-1) in d_pixels:
-		l_color_pixles.append((h-1, w-1))
+		l_color_pixels.append((h-1, w-1))
 	else:
 		l_empty_pixels.append((h-1, w-1))
 	if (h, w-1) in d_pixels:
-		l_color_pixles.append((h, w-1))
+		l_color_pixels.append((h, w-1))
 	else:
 		l_empty_pixels.append((h, w-1))
 	if (h+1, w) in d_pixels:
-		l_color_pixles.append((h+1, w))
+		l_color_pixels.append((h+1, w))
 	else:
 		l_empty_pixels.append((h+1, w))
 	if (h+1, w+1) in d_pixels:
-		l_color_pixles.append((h+1, w+1))
+		l_color_pixels.append((h+1, w+1))
 	else:
 		l_empty_pixels.append((h+1, w+1))
 	if (h+1, w-1) in d_pixels:
-		l_color_pixles.append((h+1, w-1))
+		l_color_pixels.append((h+1, w-1))
 	else:
 		l_empty_pixels.append((h+1, w-1))
 	if (h, w+1) in d_pixels:
-		l_color_pixles.append((h, w+1))
+		l_color_pixels.append((h, w+1))
 	else:
 		l_empty_pixels.append((h, w+1))
 	if (h-1, w+1) in d_pixels:
-		l_color_pixles.append((h-1, w+1))
+		l_color_pixels.append((h-1, w+1))
 	else:
 		l_empty_pixels.append((h-1, w+1))	
-	return l_empty_pixels, l_color_pixles
+	return l_empty_pixels, l_color_pixels
 
 
 #credit to https://medium.com/@BrendanArtley/matplotlib-color-gradients-21374910584b
