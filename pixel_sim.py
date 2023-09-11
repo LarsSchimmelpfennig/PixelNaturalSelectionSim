@@ -4,7 +4,6 @@ from cv2 import VideoWriter, VideoWriter_fourcc
 import random
 
 t1 = time.time()
-#return a tuple of two lists, locations of empty and color pixels
 def find_neighbor_pixels(h, w, d_pixels):
 	"""
 	Filters neighboring pixels at the position (h, w)
@@ -12,38 +11,12 @@ def find_neighbor_pixels(h, w, d_pixels):
 	"""
 	l_empty_pixels = []
 	l_color_pixels = []
-	if (h-1, w) in d_pixels:
-		l_color_pixels.append((h-1, w))
-	else:
-		l_empty_pixels.append((h-1, w))
-	if (h-1, w-1) in d_pixels:
-		l_color_pixels.append((h-1, w-1))
-	else:
-		l_empty_pixels.append((h-1, w-1))
-	if (h, w-1) in d_pixels:
-		l_color_pixels.append((h, w-1))
-	else:
-		l_empty_pixels.append((h, w-1))
-	if (h+1, w) in d_pixels:
-		l_color_pixels.append((h+1, w))
-	else:
-		l_empty_pixels.append((h+1, w))
-	if (h+1, w+1) in d_pixels:
-		l_color_pixels.append((h+1, w+1))
-	else:
-		l_empty_pixels.append((h+1, w+1))
-	if (h+1, w-1) in d_pixels:
-		l_color_pixels.append((h+1, w-1))
-	else:
-		l_empty_pixels.append((h+1, w-1))
-	if (h, w+1) in d_pixels:
-		l_color_pixels.append((h, w+1))
-	else:
-		l_empty_pixels.append((h, w+1))
-	if (h-1, w+1) in d_pixels:
-		l_color_pixels.append((h-1, w+1))
-	else:
-		l_empty_pixels.append((h-1, w+1))	
+	for i in range(h-1, h+1):
+		for j in range(w-1, w+1):
+			if (i, j) in d_pixels:
+				l_color_pixels.append((i, j))
+			else:
+				l_empty_pixels.append((i, j))	
 	return l_empty_pixels, l_color_pixels
 
 
